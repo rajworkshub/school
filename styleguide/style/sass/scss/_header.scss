@@ -1,0 +1,59 @@
+
+
+/* Page css */
+.pagebodycontainer{ width: 100%; height: 100%; }
+
+
+.mainpagecontainer{ padding: 20px; background: #ffffff; min-width: 940px;  max-width: 1440px; min-height: 500px; border-radius: 10px; position: relative; @extend .shadow;flex-grow: 1; margin: 0px 20px 0px;}
+
+
+/* Header */
+header { height: 160px;width: 100%;line-height: 80px; margin-bottom:40px;}
+header section{ height:80px; background: #fff; border-bottom: 1px solid #e0e0e0; display: flex; justify-content: space-between; width: 100%;padding-right:10px;  }
+header section+section{background: #fafafc;border-bottom: 1px solid #e0e0e0;width: 100%;}
+
+/* Logo*/
+header section .schoollogo{ width:80px; background:#fff; text-align: center;}
+.schoollogo > * {vertical-align: middle;}
+
+/* Branch list */
+header .branchview { width:250px; }
+header .branchview a{ font-size: 18px; font-weight: 600;  display: inline-block;vertical-align: middle;line-height: 18px;}
+header .branchview a span{ color: $primarycolor;}
+
+/* Navigation */
+nav li{display:inline-block;}
+.links ul{ list-style: none; margin: 0;}
+.links li{ padding: 0px 25px; }
+header .links {overflow: hidden;flex: 1;}
+header .links ul li {padding: 0px 10px; position: relative; text-align: center; margin: 0px 5px; }
+header .links ul li a{color:#999999; text-transform: uppercase; }
+header .links ul li a.select,
+header .links ul li a:hover{ color:#2f323a;}
+header .links ul li a:hover:after,
+header .links ul li a.select:after{ content: ""; border-bottom:5px solid $primarycolor ; position: absolute; bottom: 0px; left:0; width: 100%;  }
+
+
+/* Personal settings */
+.personal{ background: #2f323a; width: 80px; }
+.personal a{ display:inline-block;color:$bordergrey; line-height: 11px; font-size: 11px;text-transform: uppercase; width: 10px;
+    position: relative;
+    margin-left: 15px; }
+.personal a:before{ content: "\2630"; width: 60px;
+    position: absolute;
+    left: -15px;
+    top: 25%;}
+
+
+/*  */
+.submenu{ flex: 1; padding-left:10px; }
+.submenu li{padding: 0px 10px; position: relative; text-align: center; margin: 0px 5px; }
+.submenu ul li a{color:#999999; text-transform: uppercase; font-size: 14px; }
+.submenu ul li a.select,
+.submenu ul li a:hover{ color:#2f323a;}
+.submenu ul li a:hover:after,
+.submenu ul li a.select:after{ content: ""; border-bottom:5px solid #999 ; position: absolute; bottom: 0px; left:0; width: 100%;  }
+
+
+
+
