@@ -6,7 +6,6 @@
 
 .mainpagecontainer{ padding: 20px; background: #ffffff; min-width: 940px;  max-width: 1440px; min-height: 500px; border-radius: 10px; position: relative; @extend .shadow;flex-grow: 1; margin: 0px 20px 0px;}
 
-
 /* Header */
 header { height: 160px;width: 100%;line-height: 80px; margin-bottom:40px;}
 header section{ height:80px; background: #fff; border-bottom: 1px solid #e0e0e0; display: flex; justify-content: space-between; width: 100%;padding-right:10px;  }
@@ -33,7 +32,6 @@ header .links ul li a:hover{ color:#2f323a;}
 header .links ul li a:hover:after,
 header .links ul li a.select:after{ content: ""; border-bottom:5px solid $primarycolor ; position: absolute; bottom: 0px; left:0; width: 100%;  }
 
-
 /* Personal settings */
 .personal{ background: #2f323a; width: 80px; }
 .personal a{ display:inline-block;color:$bordergrey; line-height: 11px; font-size: 11px;text-transform: uppercase; width: 10px;
@@ -43,7 +41,6 @@ header .links ul li a.select:after{ content: ""; border-bottom:5px solid $primar
     position: absolute;
     left: -15px;
     top: 25%;}
-
 
 /*  */
 .submenu{ flex: 1; padding-left:10px; }

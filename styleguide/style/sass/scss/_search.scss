@@ -1,65 +1,16 @@
-.searchtool{ width: 150px;}
+.searchtool{ width: 40px;}
 
-.message {
-background:#181818;
-color:#FFF;
-position: absolute;
-top: -250px;
-left: 0;
-width: 100%;
-height: 80px;
-padding: 20px;
-transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
-overflow: hidden;
-box-sizing: border-box;
-}
+.message {background:$primarycolor;color:#fff;position: absolute;top: -250px;left: 0;width: 100%;height: 80px;overflow: hidden;box-sizing: border-box;transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94); box-shadow: 0px 1px 6px 0px $shadow;}
+
+.message input{color:#fff; width: 99%; height: 80px;padding: 20px; border: 0px; font-size: 22px; font-weight: 600; background: transparent;  }
+
+#toggle {position:absolute; appearance:none; cursor:pointer; left:-100%; top:-100%; z-index: 999;}
+#toggle + label {position:absolute;background:url($iconsprit) no-repeat -5px -225	px; width:20px; height:20px; padding:9px 10px; cursor:pointer; top:30px; right:10px;}
 
 
-#toggle {
-  position:absolute;
-  appearance:none;
-  cursor:pointer;
-  left:-100%;
-  top:-100%; z-index: 999;
-}
+.container {transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);}
 
-#toggle + label {
-  position:absolute;
-  cursor:pointer;
-  padding:10px;
-  background: #26ae90;
-width: 100px;
-border-radius: 3px;
-padding: 8px 10px;
-color: #FFF;
-line-height:20px;
-font-size:12px;
-text-align:center;
--webkit-font-smoothing: antialiased;
-cursor: pointer;
-  transition:all 500ms ease;
-}
-#toggle + label:after {
-  content:"Search" 
-}
-
-.container {
-transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
-}
-
-#toggle:checked ~ .message {
-  top: 0;
-}
-
-#toggle:checked ~ .container {
-  margin-top: 250px;
-}
-
-#toggle:checked + label {
-  background:#dd6149; z-index: 999;
-}
-
-#toggle:checked + label:after {
-  content:"Close"
-}
+#toggle:checked ~ .message {top: 0;}
+#toggle:checked ~ .container {margin-top: 250px;}
+#toggle:checked + label {background:url($iconsprit) no-repeat -5px -390px; z-index: 999; width: 30px; height: 30px; }
 
